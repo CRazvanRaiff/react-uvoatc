@@ -3,7 +3,6 @@ import './login.css';
 import './home.css';
 import './app.css';
 import { Redirect } from 'react-router-dom';
-import { createHashHistory } from 'history'
 import Route from 'react-router-dom/Route';
 import Form from './Form.js'
 
@@ -50,7 +49,6 @@ class AccountTable extends React.Component {
   }
 
   routeChange() {
-    history.push('form')
   }
 
   render() {
@@ -107,5 +105,3 @@ class Account extends React.Component {
     this.setState({isEmpty:true});
   }
 }
-
-export const history = createHashHistory()
