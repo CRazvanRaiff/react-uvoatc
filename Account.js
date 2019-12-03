@@ -17,11 +17,12 @@ export default class Account extends Component {
       return(null);
 
     return (
-      <div class="form-btn account" onClick = {this.removeAccount}>
-        {this.props.account.accountOwner} <br/>
-        {this.props.account.iban} <br/>
-        {this.props.account.amount} <br/>
-        {this.props.account.currency}
+      <div className="form-btn account" onClick = {this.removeAccount}>
+        <img src = {this.props.account.avatar} style={{display: 'block', maxHeight: '100%', maxWidth: '100%'}}/>
+        {this.props.account.id} <br/>
+        {this.props.account.email} <br/>
+        {this.props.account.first_name} <br/>
+        {this.props.account.last_name} <br/>
       </div>
     );
   }
